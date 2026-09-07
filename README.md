@@ -1,7 +1,5 @@
-# NixOS_project
-My personal NixOS configuration and Linux learning project.
-![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
 # NixOS + Hyprland
+![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
 
 Minha configuração pessoal do NixOS utilizando Hyprland.
 
