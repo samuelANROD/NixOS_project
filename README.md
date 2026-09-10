@@ -1,7 +1,6 @@
-# NixOS + Hyprland
-![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
+# Arch + Hyprland
 
-Minha configuração pessoal do NixOS utilizando Hyprland.
+Minha configuração pessoal do Arch utilizando Hyprland.
 
 ## Objetivos
 
@@ -13,8 +12,6 @@ Minha configuração pessoal do NixOS utilizando Hyprland.
 
 ## Tecnologias
 
-- NixOS
-- Nix
 - Hyprland
 - Wayland
 - Bash
