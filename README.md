@@ -1,6 +1,6 @@
-# Arch + Hyprland
+# NixOS
 
-Minha configuração pessoal do Arch utilizando Hyprland.
+Minha configuração pessoal do NixOS utilizando Hyprland.
 
 ## Objetivos
 
@@ -12,7 +12,5 @@ Minha configuração pessoal do Arch utilizando Hyprland.
 
 ## Tecnologias
 
-- Hyprland
-- Wayland
 - Bash
 - Git
