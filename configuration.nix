@@ -104,6 +104,7 @@
      git
      jdk
      python3
+     php
    
     #DE
      libsForQt5.qtstyleplugin-kvantum
