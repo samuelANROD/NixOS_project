@@ -129,6 +129,11 @@
 
  #flatpak
   services.flatpak.enable = true;
+
+ #ollama
+  services.ollama = {
+    enable = true;
+   };
   	 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
