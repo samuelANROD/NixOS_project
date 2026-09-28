@@ -1,0 +1,68 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    "logo": {
+        "source": "~/.config/fastfetch/ascii/nixos.txt",
+        "type": "file",
+        "position": "top",
+        "height": 7,
+        "padding": { "top": 1, "bottom": 1, "left": 17, "right": 0 }
+    },
+
+    "display": {
+        "separator": " ▸ ",
+        "percent": { "type": 3 },
+        "color": {
+            "output": "38;5;159",
+            "separator": "38;5;240"
+        },
+        "constants": [
+            "\u001b[38;5;51m",
+            "\u001b[38;5;201m",
+            "\u001b[38;5;214m",
+            "\u001b[38;5;46m",
+            "\u001b[38;5;240m",
+            "\u001b[0m"
+        ]
+    },
+
+    "modules": [
+        { "type": "custom", "format": "  {$1}╭━━━━◢◤ {$2}PAINEL DE COMANDO {$5}· {$3}NIXOS{$1} ◥◣━━━━━━━━━━━━━━━╮{$6}" },
+        { "type": "custom", "format": "  {$1}┃ {$4}● SISTEMAS ONLINE   {$3}● ESCUDOS ATIVOS   {$2}● MOTORES PRONTOS{$6}" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ IDENTIDADE ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "title",  "key": "  {$1}┃ {$3}◈ COMANDANTE  {$6}", "format": "{user-name}" },
+        { "type": "title",  "key": "  {$1}┃ {$3}◈ NAVE        {$6}", "format": "{host-name}" },
+        { "type": "os",     "key": "  {$1}┃ {$3}◈ SISTEMA     {$6}" },
+        { "type": "kernel", "key": "  {$1}┃ {$3}◈ NÚCLEO      {$6}" },
+        { "type": "uptime", "key": "  {$1}┃ {$3}◈ EM VOO      {$6}" },
+        { "type": "command","key": "  {$1}┃ {$3}◈ CONSTRUÍDA  {$6}",
+          "text": "birth=$(stat -c %W /); now=$(date +%s); echo $(( (now - birth) / 86400 )) dias" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ CASCO ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "host",  "key": "  {$1}┃ {$3}▣ MODELO      {$6}" },
+        { "type": "board", "key": "  {$1}┃ {$3}▣ PLACA-MÃE   {$6}" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ NÚCLEO DE ENERGIA ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "cpu",    "key": "  {$1}┃ {$4}⚡ CPU         {$6}", "showPeCoreCount": true, "temp": true },
+        { "type": "gpu",    "key": "  {$1}┃ {$4}⚡ GPU         {$6}", "temp": true },
+        { "type": "memory", "key": "  {$1}┃ {$4}⚡ RAM         {$6}" },
+        { "type": "swap",   "key": "  {$1}┃ {$4}⚡ SWAP        {$6}" },
+        { "type": "disk",   "key": "  {$1}┃ {$4}⚡ DISCO       {$6}", "folders": "/" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ CABINE ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "display",  "key": "  {$1}┃ {$2}◉ TELA        {$6}" },
+        { "type": "wm",       "key": "  {$1}┃ {$2}◉ JANELAS     {$6}" },
+        { "type": "terminal", "key": "  {$1}┃ {$2}◉ TERMINAL    {$6}" },
+        { "type": "shell",    "key": "  {$1}┃ {$2}◉ SHELL       {$6}" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ SENSORES ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "packages",  "key": "  {$1}┃ {$3}✦ PACOTES     {$6}" },
+        { "type": "wifi",      "key": "  {$1}┃ {$3}✦ WI-FI       {$6}" },
+        { "type": "battery",   "key": "  {$1}┃ {$3}✦ BATERIA     {$6}" },
+
+        { "type": "custom", "format": "  {$1}┣━━ {$2}⟦ ESPECTRO ⟧ {$1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{$6}" },
+        { "type": "colors", "key": "  {$1}┃ {$6}", "symbol": "circle", "paddingLeft": 0 },
+        { "type": "custom", "format": "  {$1}╰━━━━◥◣ {$4}SISTEMAS NOMINAIS {$1}◢◤━━━━━━━━━━━━━━━━╯{$6}" }
+    ]
+}
