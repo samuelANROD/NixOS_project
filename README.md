@@ -1,6 +1,6 @@
 # NixOS
 
-Minha configuração pessoal do NixOS utilizando Hyprland.
+Minha configuração pessoal do NixOS.
 
 ## Objetivos
 
