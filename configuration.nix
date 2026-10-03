@@ -134,6 +134,21 @@
   services.ollama = {
     enable = true;
    };
+
+ #limpeza automatica (dia 1 e 15, as 3h)
+  nix.gc = {
+    automatic = true;
+    dates = "*-*-1,15 03:00";
+    options = "--delete-older-than 14d";
+    persistent = true;
+  };
+  nix.settings.auto-optimise-store = true;
+
+ #limita os logs do systemd
+  services.journald.extraConfig = ''
+    MaxRetentionSec=14day
+    SystemMaxUse=500M
+  '';
   	 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
