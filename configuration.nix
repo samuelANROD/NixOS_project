@@ -117,12 +117,23 @@
      tty-clock
      cava
      btop
+     tree       # mostra pastas e arquivos em formato de árvore
+     eza        # ls moderno, com cores e ícones
+     bat        # cat com cores e numeração de linhas
+     fd         # find mais simples e rápido
+     lazygit    # interface de git dentro do terminal
+     neovim     # editor de texto de termina
+
    ];
 
  #steam for games  
   programs.steam = {
     enable = true;
+    gamescopeSession.enable = true;
    };
+
+ #desempenho em jogos
+  programs.gamemode.enable = true;
 
  #pkgs NixOS
   nixpkgs.config.allowUnfree = true;
@@ -149,6 +160,16 @@
     MaxRetentionSec=14day
     SystemMaxUse=500M
   '';
+
+  #fontes
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    inter
+  ];
+
+  #trim do SSD
+  services.fstrim.enable = true;
+
   	 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
