@@ -146,6 +146,9 @@
     enable = true;
    };
 
+ #alpaca AI
+  #flatpak install flathub com.jeffser.Alpaca
+
  #limpeza automatica (dia 1 e 15, as 3h)
   nix.gc = {
     automatic = true;
