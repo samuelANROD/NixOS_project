@@ -124,6 +124,20 @@
      lazygit    # interface de git dentro do terminal
      neovim     # editor de texto de termina
 
+     #neovim e ferramentas de apoio
+     gcc                   # compilador de C (Treesitter e seus programas em C)
+     gnumake               # ferramenta make, usada por plugins e projetos em C
+     ripgrep               # busca texto dentro dos arquivos (grep rápido)
+     unzip                 # descompacta arquivos que alguns plugins precisam
+     wl-clipboard          # copiar/colar entre o Neovim e o sistema (Wayland)
+     basedpyright          # LSP do Python (autocomplete, erros, documentação)
+     ruff                  # linter e formatador de Python
+     clang-tools           # clangd (LSP do C) e clang-format (formatador de C)
+     nil                   # LSP do Nix (ajuda ao editar o configuration.nix)
+     nixfmt                # formatador de código Nix
+     lua-language-server   # LSP de Lua (para editar o init.lua sem erros falsos)
+     stylua                # formatador de Lua
+
    ];
 
  #steam for games  
